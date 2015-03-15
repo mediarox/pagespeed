@@ -38,7 +38,7 @@ class Pagespeed_Js_Model_Observer
 
         // Step 2
         $closedBodyPosition = strpos($html, '</body>');
-        if($closedBodyPosition === false) return;
+        if(false === $closedBodyPosition) return;
 
         // Step 3
         $conditionalJsTags = '';
