@@ -6,12 +6,12 @@ This extension should help, to fulfill the requirements of the tool [Google Page
 Current features
 ----------------
 
-1. Move every Javascript tag (head & inline) to the bottom. ({stripped_html}{js}</body></html>)
-    * including conditional js units (<!--[if lt IE 7]>{multiple js tags}<![endif]-->)
+1. Move every Javascript tag (head & inline) to the bottom. ```({stripped_html}{js}</body></html>)```
+    * including conditional js units ```(<!--[if lt IE 7]>{multiple js tags}<![endif]-->)```
     * including external js tags
     * including "inline" js tags
-2. Move every CSS (head & inline) to the bottom. ({stripped_html}{css}</body></html>)
-    * including conditional css units (<!--[if lt IE 7]>{multiple css tags}<![endif]-->)
+2. Move every CSS (head & inline) to the bottom. ```({stripped_html}{css}</body></html>)```
+    * including conditional css units ```(<!--[if lt IE 7]>{multiple css tags}<![endif]-->)```
     * including external css tags
     * including inline css tags
 
