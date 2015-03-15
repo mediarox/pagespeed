@@ -22,7 +22,7 @@ Simple parse the final html stream on the event "controller_front_send_response_
 
 On our local hardware the html parsing requires a maximum of 8 milliseconds.
 
-### Requirements from PageSpeed Insights and planned Features
+### Requirements from PageSpeed Insights and planned features
 
 1. ~~[Eliminate render-blocking JavaScript and CSS in above-the-fold content](https://developers.google.com/speed/docs/insights/BlockingJS)~~ (feature 1 & 2)
 2. [Prioritize visible content](https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent)
