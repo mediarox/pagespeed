@@ -67,5 +67,5 @@ Steven Fritzsche [@de_mediarox](https://twitter.com/de_mediarox)
 
 ### Copyright
 
-(c) 2015 Steven Fritzsche <sfritzsche@mediarox.de>
+(c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de) - Steven Fritzsche <sfritzsche@mediarox.de>
 
