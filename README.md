@@ -52,7 +52,7 @@ On our local hardware the html parsing requires a maximum of 8 milliseconds.
 
 1. There is also a great tool called [PageSpeed Module](https://developers.google.com/speed/pagespeed/module)
 for common webservers like apache and nginx. If you have the opportunity: Use it, but read the manual.
-2. Test before use. There are also "great" things like multiple "</body>" tags, that will crash the party.
+2. Test before use. There are also "great" things like multiple ```</body>``` tags, that will crash the party.
 3. Front Page Cache: Test it. Look that our event "controller_front_send_response_before" is called before
 your FPC-Extension starts to observe.
 
