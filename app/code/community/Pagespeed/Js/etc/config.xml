@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Pagespeed_Js
+ * @copyright Copyright (c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de)
+ * @author Steven Fritzsche <sfritzsche@mediarox.de>
+ */
+-->
+<config>
+    <modules>
+        <Pagespeed_Js>
+            <version>0.0.0.1</version>
+        </Pagespeed_Js>
+    </modules>
+    <frontend>
+        <events>
+
+            <!--
+                Event before response send to browser
+            -->
+            <controller_front_send_response_before>
+                <observers>
+                    <pagespeed_js_response_before>
+                        <type>singleton</type>
+                        <class>pagespeed_js/observer</class>
+                        <method>parseJsToBottom</method>
+                    </pagespeed_js_response_before>
+                </observers>
+            </controller_front_send_response_before>
+
+        </events>
+    </frontend>
+    <global>
+
+        <!--
+            default class declarations
+        -->
+        <models>
+            <pagespeed_js>
+                <class>Pagespeed_Js_Model</class>
+            </pagespeed_js>
+        </models>
+        <helpers>
+            <pagespeed_js>
+                <class>Pagespeed_Js_Helper</class>
+            </pagespeed_js>
+        </helpers>
+
+    </global>
+
+</config>
