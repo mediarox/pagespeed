@@ -1,4 +1,4 @@
-Magento Google Pagespeed Optimization Extension
+Magento Google PageSpeed Optimization Extension
 -----------------------------------------------
 
 This extension should help, to fulfill the requirements of the tool [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
