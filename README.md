@@ -1,10 +1,9 @@
 Magento Google Pagespeed Optimization Extension
-===============================================
+-----------------------------------------------
 
 This extension should help, to fulfill the requirements of the tool [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
-Current features
-----------------
+### Current features
 
 1. Move every Javascript tag (head & inline) to the bottom. ```({stripped_html}{js}</body></html>)```
     * including conditional js units ```(<!--[if lt IE 7]>{multiple js tags}<![endif]-->)```
@@ -35,7 +34,7 @@ On our local hardware the html parsing requires a maximum of 8 milliseconds.
     * Both are covered by [Speedster Advanced by Fooman](http://www.magentocommerce.com/magento-connect/speedster-advanced-by-fooman.html) (note: that we have no experience with this extension, but Fooman seems to be a good guy.)
 3. [Optimize images](https://developers.google.com/speed/docs/insights/OptimizeImages)
     * [Image Optimization](http://www.magentocommerce.com/magento-connect/image-optimization.html)(note: no experience too.)
-4. [Minify HTML](https://developers.google.com/speed/docs/insights/MinifyResources)~~
+4. [Minify HTML](https://developers.google.com/speed/docs/insights/MinifyResources)
     * Based primary on [Minify CSS](https://developers.google.com/speed/docs/insights/MinifyResources) and [Minify JavaScript](https://developers.google.com/speed/docs/insights/MinifyResources).
 
 ### Requirements from PageSpeed Insights which are covered by your server admin :)
