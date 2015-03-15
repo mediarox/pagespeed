@@ -44,7 +44,7 @@ On our local hardware the html parsing requires a maximum of 8 milliseconds.
 3. [Leverage browser caching](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching)
 4. [Reduce server response time](https://developers.google.com/speed/docs/insights/Server)
 
-![Goal]: http://www.mediarox.de/goal.png
+![Goal](http://www.mediarox.de/goal.png)
 
 ### Notices
 
