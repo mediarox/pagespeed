@@ -18,7 +18,7 @@ This extension should help, to fulfill the requirements of the tool [Google Page
 
 Simple parse the final html stream on the event "controller_front_send_response_before".
 
-### What about performance/paring time ?
+### What about performance/parsing time ?
 
 On our local hardware the html parsing requires a maximum of 8 milliseconds.
 
