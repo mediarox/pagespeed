@@ -55,7 +55,8 @@ for common webservers like apache and nginx. If you have the opportunity: Use it
 2. Test before use. There are also "great" things like multiple ```</body>``` tags, that will crash the party.
 3. Front Page Cache: Test it. Look that our event "controller_front_send_response_before" is called before
 your FPC-Extension starts to observe.
-
+4. If an Javascript use the outdated "document.write",  it must be excluded by the regex pattern.
+Maybe we add a exclude store config field in the future.
 
 ### Developer
 
@@ -68,4 +69,3 @@ Steven Fritzsche [@de_mediarox](https://twitter.com/de_mediarox)
 ### Copyright
 
 (c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de) - Steven Fritzsche <sfritzsche@mediarox.de>
-
