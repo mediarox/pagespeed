@@ -1,0 +1,4 @@
+# modman file for pagespeed
+app/code/community/Pagespeed/ app/code/community/Pagespeed/
+app/etc/modules/Pagespeed_Css.xml app/etc/modules/Pagespeed_Css.xml
+app/etc/modules/Pagespeed_Js.xml app/etc/modules/Pagespeed_Js.xml
