@@ -62,6 +62,10 @@ Maybe we add a exclude store config field in the future.
 
 Steven Fritzsche [@de_mediarox](https://twitter.com/de_mediarox)
 
+### Special thanks
+
+Sander Kwantes [sanderkwantes](https://github.com/sanderkwantes)
+
 ### Licence
 
 [OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)
