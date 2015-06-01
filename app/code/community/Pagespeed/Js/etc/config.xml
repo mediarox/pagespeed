@@ -4,19 +4,21 @@
  * @package Pagespeed_Js
  * @copyright Copyright (c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de)
  * @author Steven Fritzsche <sfritzsche@mediarox.de>
+ * @author Thomas Uhlig <tuhlig@mediarox.de>
  */
 -->
 <config>
+
     <modules>
         <Pagespeed_Js>
-            <version>0.0.0.1</version>
+            <version>0.0.0.2</version>
         </Pagespeed_Js>
     </modules>
+
     <frontend>
         <events>
-
             <!--
-                Event before response send to browser
+                Event before the response has been sent to browser
             -->
             <controller_front_send_response_before>
                 <observers>
@@ -27,11 +29,10 @@
                     </pagespeed_js_response_before>
                 </observers>
             </controller_front_send_response_before>
-
         </events>
     </frontend>
-    <global>
 
+    <global>
         <!--
             default class declarations
         -->
@@ -45,7 +46,46 @@
                 <class>Pagespeed_Js_Helper</class>
             </pagespeed_js>
         </helpers>
-
     </global>
+
+    <adminhtml>
+        <!--
+            config configuration permissions
+        -->
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <pagespeed>
+                                            <title>Pagespeed</title>
+                                        </pagespeed>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+    <default>
+        <!--
+            default configuration values
+        -->
+        <pagespeed>
+            <js>
+                <enabled>0</enabled>
+                <exclude_enabled>1</exclude_enabled>
+                <exclude><![CDATA[/example\.js/
+#example-directory\/example\.js#
+]]></exclude>
+            </js>
+        </pagespeed>
+    </default>
 
 </config>

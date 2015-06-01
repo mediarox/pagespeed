@@ -5,14 +5,25 @@ This extension should help, to fulfill the requirements of the tool [Google Page
 
 ### Current features
 
-1. Move every Javascript tag (head & inline) to the bottom. ```({stripped_html}{js}</body></html>)```
+1. Move all Javascript tags (head & inline) to the bottom. ```({stripped_html}{js}</body></html>)```
     * including conditional js units ```(<!--[if lt IE 7]>{multiple js tags}<![endif]-->)```
     * including external js tags
     * including "inline" js tags
-2. Move every CSS (head & inline) to the bottom. ```({stripped_html}{css}</body></html>)```
+2. Move all CSS tags (head & inline) to the bottom. ```({stripped_html}{css}</body></html>)```
     * including conditional css units ```(<!--[if lt IE 7]>{multiple css tags}<![endif]-->)```
     * including external css tags
     * including inline css tags
+3. Backend configuration option to exclude specific js tags/units or css tags/units from the move. (regex pattern)
+
+### Compatibility
+
+From Magento 1.5.x to Magento 1.9.x .
+
+### Backend Configuration
+
+All modules (Pagespeed_Js, Pagespeed_Css) are disabled by default. 
+
+Configuration path: System > Configuration > ADVANCED > Pagespeed
 
 ### How it works ?
 
@@ -20,12 +31,12 @@ Simple parse the final html stream on the event "controller_front_send_response_
 
 ### What about performance/parsing time ?
 
-On our local hardware the html parsing requires a maximum of 8 milliseconds.
+On our local hardware the html parsing requires a maximum of 4 milliseconds.
 
 ### Requirements from PageSpeed Insights and planned features
 
 1. ~~[Eliminate render-blocking JavaScript and CSS in above-the-fold content](https://developers.google.com/speed/docs/insights/BlockingJS)~~ (feature 1 & 2)
-2. [Prioritize visible content](https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent)
+2. ~~[Prioritize visible content](https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent)~~ (possible with feature 3)
 
 ### Requirements from PageSpeed Insights which are covered by 3rd party extensions
 
@@ -56,15 +67,21 @@ for common webservers like apache and nginx. If you have the opportunity: Use it
 3. Front Page Cache: Test it. Look that our event "controller_front_send_response_before" is called before
 your FPC-Extension starts to observe.
 4. If an Javascript use the outdated "document.write",  it must be excluded by the regex pattern.
-Maybe we add a exclude store config field in the future.
 
-### Developer
+### Developers
 
-Steven Fritzsche [@de_mediarox](https://twitter.com/de_mediarox)
+* Steven Fritzsche [@de_mediarox](https://twitter.com/de_mediarox)
+* Thomas Uhlig [Xing](https://www.xing.com/profile/Thomas_Uhlig24)
 
 ### Special thanks
 
 Sander Kwantes [sanderkwantes](https://github.com/sanderkwantes)
+
+### Features inspired by
+
+* Daniel Chicote [Github](https://github.com/danielchicote)
+* Henk Valk [Github](https://github.com/henkvalk)
+* Dan Stevens [from Activ8](https://twitter.com/Activ8Ltd)
 
 ### Licence
 
@@ -72,4 +89,4 @@ Sander Kwantes [sanderkwantes](https://github.com/sanderkwantes)
 
 ### Copyright
 
-(c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de) - Steven Fritzsche <sfritzsche@mediarox.de>
+(c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de)

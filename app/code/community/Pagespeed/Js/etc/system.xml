@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package Pagespeed_Js
+ * @copyright Copyright (c) 2015 mediarox UG (haftungsbeschraenkt) (http://www.mediarox.de)
+ * @author Steven Fritzsche <sfritzsche@mediarox.de>
+ * @author Thomas Uhlig <tuhlig@mediarox.de>
+ */
+-->
+<config>
+    <sections>
+        <pagespeed translate="label" module="core">
+            <label>Pagespeed</label>
+            <tab>advanced</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>990</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <js>
+                    <label>Javascript Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled>
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <exclude_enabled>
+                            <label>Exclude List Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <enabled>1</enabled>
+                            </depends>
+                        </exclude_enabled>
+                        <exclude>
+                            <label>Exclude List</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Regular expressions (one per line including delimiters)</comment>
+                            <depends>
+                                <enabled>1</enabled>
+                                <exclude_enabled>1</exclude_enabled>
+                            </depends>
+                        </exclude>
+                    </fields>
+                </js>
+            </groups>
+        </pagespeed>
+    </sections>
+</config>
