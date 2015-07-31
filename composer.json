@@ -1,0 +1,7 @@
+{
+	"name": "mediarox/pagespeed",
+	"type": "magento-module",
+	"require": {
+		"magento-hackathon/magento-composer-installer": "*"
+	}
+}
