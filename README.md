@@ -76,6 +76,7 @@ your FPC-Extension starts to observe.
 ### Special thanks
 
 Sander Kwantes [sanderkwantes](https://github.com/sanderkwantes)
+Adam Johnson [adamj88] (https://github.com/adamj88)
 
 ### Features inspired by
 
