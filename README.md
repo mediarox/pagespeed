@@ -77,6 +77,7 @@ your FPC-Extension starts to observe.
 
 * Sander Kwantes [sanderkwantes](https://github.com/sanderkwantes)
 * Adam Johnson [adamj88] (https://github.com/adamj88)
+* Ben Corlett [bencorlett] (https://github.com/bencorlett)
 
 ### Features inspired by
 
