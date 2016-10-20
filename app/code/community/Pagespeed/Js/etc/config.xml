@@ -20,7 +20,7 @@
             <!--
                 Event before the response has been sent to browser
             -->
-            <controller_front_send_response_before>
+            <http_response_send_before>
                 <observers>
                     <pagespeed_js_response_before>
                         <type>singleton</type>
@@ -28,7 +28,7 @@
                         <method>parseJsToBottom</method>
                     </pagespeed_js_response_before>
                 </observers>
-            </controller_front_send_response_before>
+            </http_response_send_before>
         </events>
     </frontend>
 

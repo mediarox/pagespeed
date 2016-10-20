@@ -89,7 +89,7 @@ class Pagespeed_Js_Model_Observer
         if (!$helper->isEnabled()) return;
 
         // Step 2
-        $response = $observer->getFront()->getResponse();
+        $response = $observer->getResponse();
         $html = $response->getBody();
         $this->excludeList = $helper->getExcludeList();
 
